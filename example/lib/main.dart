@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   int _column = 0;
   double _fontSize = 14;
 
-  String? _itemCombine = 'withTextBefore';
+  String? _itemCombine = 'onlyText';
 
   String _onPressed = '';
 
@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     _tabController = TabController(length: 1, vsync: this);
     _scrollViewController = ScrollController();
 
-    _items = _list.toList();
+    _items = _list;
   }
 
   late List _items;
